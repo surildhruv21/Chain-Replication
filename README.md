@@ -8,3 +8,5 @@
     http://localhost:8080/put?key=value
 8. To compile the client: javac -cp lib/commons-logging-1.2.jar:lib/core-0.1.4.jar:lib/httpclient-4.5.2.jar:lib/httpcore-4.4.4.jar:lib/json-20140107.jar: YcsbClient.java
 9. To run the client: java -cp lib/commons-logging-1.2.jar:lib/core-0.1.4.jar:lib/httpclient-4.5.2.jar:lib/httpcore-4.4.4.jar:lib/json-20140107.jar: com.yahoo.ycsb.Client -t -db YcsbClient -P ../workloads/workloadd
+
+10. lib folder in src directory is for voldemort. copy the lib folder in this directory to voldemort and then run voldemort
