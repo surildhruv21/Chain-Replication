@@ -80,7 +80,7 @@ public class ReplicaDriver2 extends AbstractVerticle{
 						req.response().end();
 					} else if(command.equalsIgnoreCase("put")){
 						if(successor == null){
-							client.put(query.substring(0,query.indexOf('=')),query.substring(0,query.indexOf('=')));
+							client.put(query.substring(0,query.indexOf('=')),query.substring(query.indexOf('=')+1));
 							req.response().setStatusCode(200);
 			        		req.response().headers()
 			        			.add("Content-Length", String.valueOf(16))
@@ -115,7 +115,7 @@ public class ReplicaDriver2 extends AbstractVerticle{
 								}
 								future.complete();
 								}, res -> {
-									client.put(query.substring(0,query.indexOf('=')),query.substring(0,query.indexOf('=')));
+									client.put(query.substring(0,query.indexOf('=')),query.substring(query.indexOf('=')+1));
 									req.response().setStatusCode(200);
 					        		req.response().headers()
 					        			.add("Content-Length", String.valueOf(16))
