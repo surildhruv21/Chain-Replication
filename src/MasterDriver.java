@@ -75,7 +75,6 @@ public class MasterDriver extends AbstractVerticle{
 			        		.add("Content-Length", String.valueOf(version.getValue().length()))
 			            	.add("Content-Type", "text/html; charset=UTF-8");
 						req.response().write(version.getValue());
-						System.out.println("get:"+query+" "+version.getValue());
 						req.response().end();
 					} else if(command.equalsIgnoreCase("put")){
 						int sem_init_value = 0;
@@ -108,7 +107,6 @@ public class MasterDriver extends AbstractVerticle{
 			        		req.response().headers()
 			        			.add("Content-Length", String.valueOf(16))
 			            		.add("Content-Type", "text/html; charset=UTF-8");
-			            	System.out.println("put:"+query.substring(0,query.indexOf('='))+" " + query.substring(query.indexOf('=')+1));
 							req.response().write("write successful");
 							req.response().end();
 						});
