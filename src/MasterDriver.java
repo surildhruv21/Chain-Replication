@@ -63,6 +63,7 @@ public class MasterDriver extends AbstractVerticle{
 			            .add("Content-Length", String.valueOf(15))
 			            .add("Content-Type", "text/html; charset=UTF-8");
 			        req.response().write("invalid command");
+			        req.netSocket().close();
 			        
 				} else {
 					if(command.equalsIgnoreCase("get")){
@@ -73,6 +74,7 @@ public class MasterDriver extends AbstractVerticle{
 			            	.add("Content-Type", "text/html; charset=UTF-8");
 						req.response().write(version.getValue());
 						req.response().end();
+						req.netSocket().close();
 					} else if(command.equalsIgnoreCase("put")){
 						int sem_init_value = 0;
 						final Semaphore completeWork = new Semaphore(sem_init_value); 
@@ -145,6 +147,7 @@ public class MasterDriver extends AbstractVerticle{
 
 							req.response().write("delete successful");
 							req.response().end();
+							req.netSocket().close();
 						});
 					} else {
 						req.response().setStatusCode(200);
@@ -154,6 +157,7 @@ public class MasterDriver extends AbstractVerticle{
 						
 						req.response().write("invalid request");
 						req.response().end();
+						req.netSocket().close();
 					}
 				}
 			}

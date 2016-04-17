@@ -69,7 +69,7 @@ public class ReplicaDriver9 extends AbstractVerticle{
 			            .add("Content-Length", String.valueOf(15))
 			            .add("Content-Type", "text/html; charset=UTF-8");
 			        req.response().write("invalid command");
-			        
+			        req.netSocket().close();
 				}
 				else{
 					if(command.equalsIgnoreCase("get")){
@@ -80,6 +80,7 @@ public class ReplicaDriver9 extends AbstractVerticle{
 			            	.add("Content-Type", "text/html; charset=UTF-8");
 						req.response().write(version.getValue());
 						req.response().end();
+						req.netSocket().close();
 					} else if(command.equalsIgnoreCase("put")){
 						if(successor == null){
 							client.put(query.substring(0,query.indexOf('=')),query.substring(query.indexOf('=')+1));
@@ -148,6 +149,7 @@ public class ReplicaDriver9 extends AbstractVerticle{
 
 							req.response().write("delete successful");
 							req.response().end();
+							req.netSocket().close();
 						} else {
 							int sem_init_value = 0;
 							final Semaphore completeWork = new Semaphore(sem_init_value); 
@@ -185,6 +187,7 @@ public class ReplicaDriver9 extends AbstractVerticle{
 
 									req.response().write("delete successful");
 									req.response().end();
+									req.netSocket().close();
 								}); 
 							} else {
 								try {
@@ -203,6 +206,7 @@ public class ReplicaDriver9 extends AbstractVerticle{
 						
 						req.response().write("invalid request");
 						req.response().end();
+						req.netSocket().close();
 					}
 				}
 			}
