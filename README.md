@@ -1,4 +1,6 @@
 1. clone this repo
+	git clone https://github.com/surildhruv21/Chain-Replication.git
+
 2. resolve vertex dependencies
 3. go to src/
 4. To compile and run: vertx run -cp ../lib/snakeyaml-1.10.jar:../lib/voldemort-0.96.jar:../lib/jdom-1.1.jar:../lib/log4j-1.2.17.jar: MasterDriver.java
