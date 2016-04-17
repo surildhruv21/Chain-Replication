@@ -34,6 +34,8 @@ import voldemort.client.ClientConfig;
 import voldemort.versioning.Versioned;
 import voldemort.versioning.Version;
 
+import io.vertx.core.net.NetSocket;
+
 public class ReplicaDriver1 extends AbstractVerticle{
 
 	private Address successor = null;
@@ -88,6 +90,7 @@ public class ReplicaDriver1 extends AbstractVerticle{
 
 							req.response().write("write successful");
 							req.response().end();
+							req.netSocket().close();
 						} else {
 							int sem_init_value = 0;
 							final Semaphore completeWork = new Semaphore(sem_init_value); 
@@ -123,6 +126,7 @@ public class ReplicaDriver1 extends AbstractVerticle{
 
 									req.response().write("write successful");
 									req.response().end();
+									req.netSocket().close();
 								}); 
 							} else {
 								try {

@@ -102,7 +102,7 @@ public class YcsbClient extends DB {
 
 		String relative_path = "/get?"+key;
 
-		String url = "http://localhost:8080"+relative_path;
+		String url = "http://localhost:9002"+relative_path;
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(url);
 

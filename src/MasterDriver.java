@@ -106,6 +106,7 @@ public class MasterDriver extends AbstractVerticle{
 			            		.add("Content-Type", "text/html; charset=UTF-8");
 							req.response().write("write successful");
 							req.response().end();
+							req.netSocket().close();
 						});
 					} else if(command.equalsIgnoreCase("delete")){
 						int sem_init_value = 0;
