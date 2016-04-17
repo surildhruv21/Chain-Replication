@@ -1,0 +1,476 @@
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] keyRef: 1311838226; started at 1460856722655 took 2285575 values: {(nodeId=0, key=[117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57], retrieved= [version(0:107)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657238373437393539303237363035353034313739
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238373437393539303237363035353034313739 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238373437393539303237363035353034313739 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657238373437393539303237363035353034313739 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1296750623 requestRef: 678502076
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 678502076 totalTimeNs: 4461587 start time: 1460856722658 end time: 1460856722662 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] (keyRef: 1296750623); started at 1460856722658 took 4616560 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] keyRef: 1296750623; started at 1460856722658 took 4758892 value: [B@6e063a20 (size: 248)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 4.779105 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657238303534363930343537313035323934333732
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238303534363930343537313035323934333732 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238303534363930343537313035323934333732 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657238303534363930343537313035323934333732 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 911998839 requestRef: 385844222
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 385844222 time: 1460856722665 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 385844222 time: 1460856722667 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@68c8301f, version(0:36)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 56, 48, 53, 52, 54, 57, 48, 52, 53, 55, 49, 48, 53, 50, 57, 52, 51, 55, 50] (keyRef: 911998839); started at 1460856722665 took 1 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 56, 48, 53, 52, 54, 57, 48, 52, 53, 55, 49, 48, 53, 50, 57, 52, 51, 55, 50] (keyRef: 911998839); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 56, 48, 53, 52, 54, 57, 48, 52, 53, 55, 49, 48, 53, 50, 57, 52, 51, 55, 50] keyRef: 911998839; started at 1460856722665 took 4234486 values: {(nodeId=0, key=[117, 115, 101, 114, 56, 48, 53, 52, 54, 57, 48, 52, 53, 55, 49, 48, 53, 50, 57, 52, 51, 55, 50], retrieved= [[[B@68c8301f, version(0:36)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 4.258352 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 75736572383939343633363437313739393831313330
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572383939343633363437313739393831313330 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572383939343633363437313739393831313330 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 75736572383939343633363437313739393831313330 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1206009223 requestRef: 1581248855
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 1581248855 time: 1460856722682 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1581248855 time: 1460856722682 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:176)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] (keyRef: 1206009223); started at 1460856722682 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] (keyRef: 1206009223); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] keyRef: 1206009223; started at 1460856722682 took 649380 values: {(nodeId=0, key=[117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48], retrieved= [version(0:176)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 75736572383939343633363437313739393831313330
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572383939343633363437313739393831313330 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572383939343633363437313739393831313330 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 75736572383939343633363437313739393831313330 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1627543909 requestRef: 1623738164
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 1623738164 totalTimeNs: 1303582 start time: 1460856722683 end time: 1460856722684 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] (keyRef: 1627543909); started at 1460856722682 took 1468649 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] keyRef: 1627543909; started at 1460856722682 took 1588173 value: [B@361040af (size: 238)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 1.633405 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657234383931373535333236303334383131383930
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657234383931373535333236303334383131383930 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657234383931373535333236303334383131383930 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657234383931373535333236303334383131383930 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 1681784983 requestRef: 1189939907
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 1189939907 time: 1460856722687 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1189939907 time: 1460856722688 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@3694fe8f, version(0:45)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 52, 56, 57, 49, 55, 53, 53, 51, 50, 54, 48, 51, 52, 56, 49, 49, 56, 57, 48] (keyRef: 1681784983); started at 1460856722687 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 52, 56, 57, 49, 55, 53, 53, 51, 50, 54, 48, 51, 52, 56, 49, 49, 56, 57, 48] (keyRef: 1681784983); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 52, 56, 57, 49, 55, 53, 53, 51, 50, 54, 48, 51, 52, 56, 49, 49, 56, 57, 48] keyRef: 1681784983; started at 1460856722687 took 1431063 values: {(nodeId=0, key=[117, 115, 101, 114, 52, 56, 57, 49, 55, 53, 53, 51, 50, 54, 48, 51, 52, 56, 49, 49, 56, 57, 48], retrieved= [[[B@3694fe8f, version(0:45)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 1.457581 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657233353735303939343931333035383733343938
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233353735303939343931333035383733343938 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233353735303939343931333035383733343938 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657233353735303939343931333035383733343938 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 1084867729 requestRef: 1418153643
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 1418153643 time: 1460856722704 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1418153643 time: 1460856722704 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@45dea814, version(0:33)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 51, 53, 55, 53, 48, 57, 57, 52, 57, 49, 51, 48, 53, 56, 55, 51, 52, 57, 56] (keyRef: 1084867729); started at 1460856722704 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 51, 53, 55, 53, 48, 57, 57, 52, 57, 49, 51, 48, 53, 56, 55, 51, 52, 57, 56] (keyRef: 1084867729); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 51, 53, 55, 53, 48, 57, 57, 52, 57, 49, 51, 48, 53, 56, 55, 51, 52, 57, 56] keyRef: 1084867729; started at 1460856722704 took 747090 values: {(nodeId=0, key=[117, 115, 101, 114, 51, 53, 55, 53, 48, 57, 57, 52, 57, 49, 51, 48, 53, 56, 55, 51, 52, 57, 56], retrieved= [[[B@45dea814, version(0:33)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.769825 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657238373437393539303237363035353034313739
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238373437393539303237363035353034313739 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238373437393539303237363035353034313739 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657238373437393539303237363035353034313739 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1690226820 requestRef: 12698320
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 12698320 time: 1460856722714 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 12698320 time: 1460856722715 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:110)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] (keyRef: 1690226820); started at 1460856722714 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] (keyRef: 1690226820); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] keyRef: 1690226820; started at 1460856722714 took 655477 values: {(nodeId=0, key=[117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57], retrieved= [version(0:110)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657238373437393539303237363035353034313739
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238373437393539303237363035353034313739 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657238373437393539303237363035353034313739 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657238373437393539303237363035353034313739 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1951022308 requestRef: 160871098
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 160871098 totalTimeNs: 415908 start time: 1460856722715 end time: 1460856722715 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] (keyRef: 1951022308); started at 1460856722715 took 521737 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 56, 55, 52, 55, 57, 53, 57, 48, 50, 55, 54, 48, 53, 53, 48, 52, 49, 55, 57] keyRef: 1951022308; started at 1460856722715 took 637460 value: [B@1b3e79fc (size: 252)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.656257 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 75736572333131323432383239323131313434373836
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572333131323432383239323131313434373836 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572333131323432383239323131313434373836 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 75736572333131323432383239323131313434373836 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1316775504 requestRef: 79386214
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 79386214 time: 1460856722731 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 79386214 time: 1460856722731 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:53)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 51, 49, 49, 50, 52, 50, 56, 50, 57, 50, 49, 49, 49, 52, 52, 55, 56, 54] (keyRef: 1316775504); started at 1460856722731 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 51, 49, 49, 50, 52, 50, 56, 50, 57, 50, 49, 49, 49, 52, 52, 55, 56, 54] (keyRef: 1316775504); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 51, 49, 49, 50, 52, 50, 56, 50, 57, 50, 49, 49, 49, 52, 52, 55, 56, 54] keyRef: 1316775504; started at 1460856722731 took 650322 values: {(nodeId=0, key=[117, 115, 101, 114, 51, 49, 49, 50, 52, 50, 56, 50, 57, 50, 49, 49, 49, 52, 52, 55, 56, 54], retrieved= [version(0:53)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 75736572333131323432383239323131313434373836
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572333131323432383239323131313434373836 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572333131323432383239323131313434373836 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 75736572333131323432383239323131313434373836 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 163225986 requestRef: 659423272
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 659423272 totalTimeNs: 1913257 start time: 1460856722732 end time: 1460856722734 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 51, 49, 49, 50, 52, 50, 56, 50, 57, 50, 49, 49, 49, 52, 52, 55, 56, 54] (keyRef: 163225986); started at 1460856722732 took 2134167 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 51, 49, 49, 50, 52, 50, 56, 50, 57, 50, 49, 49, 49, 52, 52, 55, 56, 54] keyRef: 163225986; started at 1460856722732 took 2292516 value: [B@a2dac77 (size: 251)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 2.313381 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657236303438333332333132383731313332393538
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236303438333332333132383731313332393538 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236303438333332333132383731313332393538 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236303438333332333132383731313332393538 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 143773326 requestRef: 1602863348
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 1602863348 time: 1460856722737 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1602863348 time: 1460856722737 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@405a666b, version(0:33)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 54, 48, 52, 56, 51, 51, 50, 51, 49, 50, 56, 55, 49, 49, 51, 50, 57, 53, 56] (keyRef: 143773326); started at 1460856722737 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 54, 48, 52, 56, 51, 51, 50, 51, 49, 50, 56, 55, 49, 49, 51, 50, 57, 53, 56] (keyRef: 143773326); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 54, 48, 52, 56, 51, 51, 50, 51, 49, 50, 56, 55, 49, 49, 51, 50, 57, 53, 56] keyRef: 143773326; started at 1460856722737 took 694598 values: {(nodeId=0, key=[117, 115, 101, 114, 54, 48, 52, 56, 51, 51, 50, 51, 49, 50, 56, 55, 49, 49, 51, 50, 57, 53, 56], retrieved= [[[B@405a666b, version(0:33)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.717025 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657233343638393331383137373530323139313339
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233343638393331383137373530323139313339 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233343638393331383137373530323139313339 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657233343638393331383137373530323139313339 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 843622163 requestRef: 875293290
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 875293290 time: 1460856722741 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 875293290 time: 1460856722741 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@69bbeeb7, version(0:48)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 51, 52, 54, 56, 57, 51, 49, 56, 49, 55, 55, 53, 48, 50, 49, 57, 49, 51, 57] (keyRef: 843622163); started at 1460856722741 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 51, 52, 54, 56, 57, 51, 49, 56, 49, 55, 55, 53, 48, 50, 49, 57, 49, 51, 57] (keyRef: 843622163); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 51, 52, 54, 56, 57, 51, 49, 56, 49, 55, 55, 53, 48, 50, 49, 57, 49, 51, 57] keyRef: 843622163; started at 1460856722741 took 757515 values: {(nodeId=0, key=[117, 115, 101, 114, 51, 52, 54, 56, 57, 51, 49, 56, 49, 55, 55, 53, 48, 50, 49, 57, 49, 51, 57], retrieved= [[[B@69bbeeb7, version(0:48)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.781354 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657231333532313536343438333736383139343531
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231333532313536343438333736383139343531 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231333532313536343438333736383139343531 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657231333532313536343438333736383139343531 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1405441 requestRef: 97742293
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 97742293 time: 1460856722757 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 97742293 time: 1460856722758 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:38)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 49, 51, 53, 50, 49, 53, 54, 52, 52, 56, 51, 55, 54, 56, 49, 57, 52, 53, 49] (keyRef: 1405441); started at 1460856722757 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 49, 51, 53, 50, 49, 53, 54, 52, 52, 56, 51, 55, 54, 56, 49, 57, 52, 53, 49] (keyRef: 1405441); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 49, 51, 53, 50, 49, 53, 54, 52, 52, 56, 51, 55, 54, 56, 49, 57, 52, 53, 49] keyRef: 1405441; started at 1460856722757 took 821887 values: {(nodeId=0, key=[117, 115, 101, 114, 49, 51, 53, 50, 49, 53, 54, 52, 52, 56, 51, 55, 54, 56, 49, 57, 52, 53, 49], retrieved= [version(0:38)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657231333532313536343438333736383139343531
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231333532313536343438333736383139343531 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231333532313536343438333736383139343531 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657231333532313536343438333736383139343531 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1295980845 requestRef: 1892540579
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 1892540579 totalTimeNs: 373469 start time: 1460856722758 end time: 1460856722758 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 49, 51, 53, 50, 49, 53, 54, 52, 52, 56, 51, 55, 54, 56, 49, 57, 52, 53, 49] (keyRef: 1295980845); started at 1460856722758 took 484902 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 49, 51, 53, 50, 49, 53, 54, 52, 52, 56, 51, 55, 54, 56, 49, 57, 52, 53, 49] keyRef: 1295980845; started at 1460856722758 took 608515 value: [B@5be301c1 (size: 265)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.628317 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657234323938323838333635353334353637343137
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657234323938323838333635353334353637343137 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657234323938323838333635353334353637343137 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657234323938323838333635353334353637343137 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 1879305545 requestRef: 1867825938
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 1867825938 time: 1460856722761 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1867825938 time: 1460856722762 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@784a1589, version(0:75)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 52, 50, 57, 56, 50, 56, 56, 51, 54, 53, 53, 51, 52, 53, 54, 55, 52, 49, 55] (keyRef: 1879305545); started at 1460856722761 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 52, 50, 57, 56, 50, 56, 56, 51, 54, 53, 53, 51, 52, 53, 54, 55, 52, 49, 55] (keyRef: 1879305545); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 52, 50, 57, 56, 50, 56, 56, 51, 54, 53, 53, 51, 52, 53, 54, 55, 52, 49, 55] keyRef: 1879305545; started at 1460856722761 took 764297 values: {(nodeId=0, key=[117, 115, 101, 114, 52, 50, 57, 56, 50, 56, 56, 51, 54, 53, 53, 51, 52, 53, 54, 55, 52, 49, 55], retrieved= [[[B@784a1589, version(0:75)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.789348 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 75736572363538333237393137333634343639313936
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572363538333237393137333634343639313936 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572363538333237393137333634343639313936 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 75736572363538333237393137333634343639313936 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 1785290776 requestRef: 99594681
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 99594681 time: 1460856722769 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 99594681 time: 1460856722770 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@48e48c9c, version(0:66)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 54, 53, 56, 51, 50, 55, 57, 49, 55, 51, 54, 52, 52, 54, 57, 49, 57, 54] (keyRef: 1785290776); started at 1460856722769 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 54, 53, 56, 51, 50, 55, 57, 49, 55, 51, 54, 52, 52, 54, 57, 49, 57, 54] (keyRef: 1785290776); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 54, 53, 56, 51, 50, 55, 57, 49, 55, 51, 54, 52, 52, 54, 57, 49, 57, 54] keyRef: 1785290776; started at 1460856722769 took 841635 values: {(nodeId=0, key=[117, 115, 101, 114, 54, 53, 56, 51, 50, 55, 57, 49, 55, 51, 54, 52, 52, 54, 57, 49, 57, 54], retrieved= [[[B@48e48c9c, version(0:66)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.881973 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657235303031383330393035383739373531353939
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657235303031383330393035383739373531353939 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657235303031383330393035383739373531353939 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657235303031383330393035383739373531353939 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 826062418 requestRef: 284457421
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 284457421 time: 1460856722773 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 284457421 time: 1460856722774 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@5b1ed2d5, version(0:30)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 53, 48, 48, 49, 56, 51, 48, 57, 48, 53, 56, 55, 57, 55, 53, 49, 53, 57, 57] (keyRef: 826062418); started at 1460856722773 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 53, 48, 48, 49, 56, 51, 48, 57, 48, 53, 56, 55, 57, 55, 53, 49, 53, 57, 57] (keyRef: 826062418); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 53, 48, 48, 49, 56, 51, 48, 57, 48, 53, 56, 55, 57, 55, 53, 49, 53, 57, 57] keyRef: 826062418; started at 1460856722773 took 713122 values: {(nodeId=0, key=[117, 115, 101, 114, 53, 48, 48, 49, 56, 51, 48, 57, 48, 53, 56, 55, 57, 55, 53, 49, 53, 57, 57], retrieved= [[[B@5b1ed2d5, version(0:30)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.73623 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657236323734353037383930383232343032383336
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236323734353037383930383232343032383336 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236323734353037383930383232343032383336 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236323734353037383930383232343032383336 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 231341778 requestRef: 53908797
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 53908797 time: 1460856722783 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 53908797 time: 1460856722783 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:44)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 54, 50, 55, 52, 53, 48, 55, 56, 57, 48, 56, 50, 50, 52, 48, 50, 56, 51, 54] (keyRef: 231341778); started at 1460856722783 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 54, 50, 55, 52, 53, 48, 55, 56, 57, 48, 56, 50, 50, 52, 48, 50, 56, 51, 54] (keyRef: 231341778); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 54, 50, 55, 52, 53, 48, 55, 56, 57, 48, 56, 50, 50, 52, 48, 50, 56, 51, 54] keyRef: 231341778; started at 1460856722783 took 664904 values: {(nodeId=0, key=[117, 115, 101, 114, 54, 50, 55, 52, 53, 48, 55, 56, 57, 48, 56, 50, 50, 52, 48, 50, 56, 51, 54], retrieved= [version(0:44)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657236323734353037383930383232343032383336
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236323734353037383930383232343032383336 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236323734353037383930383232343032383336 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236323734353037383930383232343032383336 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 211876154 requestRef: 2042530138
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 2042530138 totalTimeNs: 351920 start time: 1460856722784 end time: 1460856722784 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 54, 50, 55, 52, 53, 48, 55, 56, 57, 48, 56, 50, 50, 52, 48, 50, 56, 51, 54] (keyRef: 211876154); started at 1460856722784 took 457297 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 54, 50, 55, 52, 53, 48, 55, 56, 57, 48, 56, 50, 50, 52, 48, 50, 56, 51, 54] keyRef: 211876154; started at 1460856722784 took 692357 value: [B@3bc3d7d1 (size: 239)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.711111 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657237343536373535363239383033363234313031
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237343536373535363239383033363234313031 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237343536373535363239383033363234313031 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237343536373535363239383033363234313031 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 126444391 requestRef: 183557781
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 183557781 time: 1460856722787 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 183557781 time: 1460856722788 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@6de65157, version(0:36)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 55, 52, 53, 54, 55, 53, 53, 54, 50, 57, 56, 48, 51, 54, 50, 52, 49, 48, 49] (keyRef: 126444391); started at 1460856722787 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 55, 52, 53, 54, 55, 53, 53, 54, 50, 57, 56, 48, 51, 54, 50, 52, 49, 48, 49] (keyRef: 126444391); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 55, 52, 53, 54, 55, 53, 53, 54, 50, 57, 56, 48, 51, 54, 50, 52, 49, 48, 49] keyRef: 126444391; started at 1460856722787 took 755571 values: {(nodeId=0, key=[117, 115, 101, 114, 55, 52, 53, 54, 55, 53, 53, 54, 50, 57, 56, 48, 51, 54, 50, 52, 49, 48, 49], retrieved= [[[B@6de65157, version(0:36)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.777856 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657236363336353533313330383339393639333032
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236363336353533313330383339393639333032 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236363336353533313330383339393639333032 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236363336353533313330383339393639333032 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1392368829 requestRef: 670617639
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 670617639 time: 1460856722797 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 670617639 time: 1460856722797 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:38)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 54, 54, 51, 54, 53, 53, 51, 49, 51, 48, 56, 51, 57, 57, 54, 57, 51, 48, 50] (keyRef: 1392368829); started at 1460856722797 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 54, 54, 51, 54, 53, 53, 51, 49, 51, 48, 56, 51, 57, 57, 54, 57, 51, 48, 50] (keyRef: 1392368829); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 54, 54, 51, 54, 53, 53, 51, 49, 51, 48, 56, 51, 57, 57, 54, 57, 51, 48, 50] keyRef: 1392368829; started at 1460856722797 took 671365 values: {(nodeId=0, key=[117, 115, 101, 114, 54, 54, 51, 54, 53, 53, 51, 49, 51, 48, 56, 51, 57, 57, 54, 57, 51, 48, 50], retrieved= [version(0:38)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657236363336353533313330383339393639333032
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236363336353533313330383339393639333032 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236363336353533313330383339393639333032 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236363336353533313330383339393639333032 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1747589463 requestRef: 1746851009
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 1746851009 totalTimeNs: 303243 start time: 1460856722797 end time: 1460856722798 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 54, 54, 51, 54, 53, 53, 51, 49, 51, 48, 56, 51, 57, 57, 54, 57, 51, 48, 50] (keyRef: 1747589463); started at 1460856722797 took 406281 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 54, 54, 51, 54, 53, 53, 51, 49, 51, 48, 56, 51, 57, 57, 54, 57, 51, 48, 50] keyRef: 1747589463; started at 1460856722797 took 535881 value: [B@543ae54b (size: 246)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.554062 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 75736572383939343633363437313739393831313330
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572383939343633363437313739393831313330 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 75736572383939343633363437313739393831313330 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 75736572383939343633363437313739393831313330 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 234498369 requestRef: 324820195
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 324820195 time: 1460856722803 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 324820195 time: 1460856722804 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@4528f73f, version(0:177)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] (keyRef: 234498369); started at 1460856722803 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] (keyRef: 234498369); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48] keyRef: 234498369; started at 1460856722803 took 839038 values: {(nodeId=0, key=[117, 115, 101, 114, 56, 57, 57, 52, 54, 51, 54, 52, 55, 49, 55, 57, 57, 56, 49, 49, 51, 48], retrieved= [[[B@4528f73f, version(0:177)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.861397 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657237333530353837393536323437393639373432
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237333530353837393536323437393639373432 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237333530353837393536323437393639373432 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237333530353837393536323437393639373432 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1948673094 requestRef: 408501381
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 408501381 time: 1460856722813 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 408501381 time: 1460856722813 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:50)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 55, 51, 53, 48, 53, 56, 55, 57, 53, 54, 50, 52, 55, 57, 54, 57, 55, 52, 50] (keyRef: 1948673094); started at 1460856722813 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 55, 51, 53, 48, 53, 56, 55, 57, 53, 54, 50, 52, 55, 57, 54, 57, 55, 52, 50] (keyRef: 1948673094); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 55, 51, 53, 48, 53, 56, 55, 57, 53, 54, 50, 52, 55, 57, 54, 57, 55, 52, 50] keyRef: 1948673094; started at 1460856722813 took 638284 values: {(nodeId=0, key=[117, 115, 101, 114, 55, 51, 53, 48, 53, 56, 55, 57, 53, 54, 50, 52, 55, 57, 54, 57, 55, 52, 50], retrieved= [version(0:50)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657237333530353837393536323437393639373432
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237333530353837393536323437393639373432 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237333530353837393536323437393639373432 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237333530353837393536323437393639373432 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1288668993 requestRef: 1050829168
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 1050829168 totalTimeNs: 344453 start time: 1460856722814 end time: 1460856722814 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 55, 51, 53, 48, 53, 56, 55, 57, 53, 54, 50, 52, 55, 57, 54, 57, 55, 52, 50] (keyRef: 1288668993); started at 1460856722813 took 448115 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 55, 51, 53, 48, 53, 56, 55, 57, 53, 54, 50, 52, 55, 57, 54, 57, 55, 52, 50] keyRef: 1288668993; started at 1460856722813 took 570728 value: [B@79e136b6 (size: 245)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.59887 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657236313638353538353332343834353930333630
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236313638353538353332343834353930333630 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236313638353538353332343834353930333630 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236313638353538353332343834353930333630 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 407437252 requestRef: 902603868
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 902603868 time: 1460856722817 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 902603868 time: 1460856722817 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@29c4036a, version(0:69)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 54, 49, 54, 56, 53, 53, 56, 53, 51, 50, 52, 56, 52, 53, 57, 48, 51, 54, 48] (keyRef: 407437252); started at 1460856722817 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 54, 49, 54, 56, 53, 53, 56, 53, 51, 50, 52, 56, 52, 53, 57, 48, 51, 54, 48] (keyRef: 407437252); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 54, 49, 54, 56, 53, 53, 56, 53, 51, 50, 52, 56, 52, 53, 57, 48, 51, 54, 48] keyRef: 407437252; started at 1460856722817 took 720152 values: {(nodeId=0, key=[117, 115, 101, 114, 54, 49, 54, 56, 53, 53, 56, 53, 51, 50, 52, 56, 52, 53, 57, 48, 51, 54, 48], retrieved= [[[B@29c4036a, version(0:69)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.741975 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657236303632393530383139343431303736343439
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236303632393530383139343431303736343439 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236303632393530383139343431303736343439 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236303632393530383139343431303736343439 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 136233478 requestRef: 14614235
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 14614235 time: 1460856722826 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 14614235 time: 1460856722827 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:38)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 54, 48, 54, 50, 57, 53, 48, 56, 49, 57, 52, 52, 49, 48, 55, 54, 52, 52, 57] (keyRef: 136233478); started at 1460856722826 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 54, 48, 54, 50, 57, 53, 48, 56, 49, 57, 52, 52, 49, 48, 55, 54, 52, 52, 57] (keyRef: 136233478); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 54, 48, 54, 50, 57, 53, 48, 56, 49, 57, 52, 52, 49, 48, 55, 54, 52, 52, 57] keyRef: 136233478; started at 1460856722826 took 651607 values: {(nodeId=0, key=[117, 115, 101, 114, 54, 48, 54, 50, 57, 53, 48, 56, 49, 57, 52, 52, 49, 48, 55, 54, 52, 52, 57], retrieved= [version(0:38)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657236303632393530383139343431303736343439
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236303632393530383139343431303736343439 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657236303632393530383139343431303736343439 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657236303632393530383139343431303736343439 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 480932528 requestRef: 625697981
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 625697981 totalTimeNs: 419400 start time: 1460856722827 end time: 1460856722827 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 54, 48, 54, 50, 57, 53, 48, 56, 49, 57, 52, 52, 49, 48, 55, 54, 52, 52, 57] (keyRef: 480932528); started at 1460856722827 took 524645 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 54, 48, 54, 50, 57, 53, 48, 56, 49, 57, 52, 52, 49, 48, 55, 54, 52, 52, 57] keyRef: 480932528; started at 1460856722827 took 637383 value: [B@5b3b8ce0 (size: 232)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.655697 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657237393339303237303839343334363437393639
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237393339303237303839343334363437393639 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237393339303237303839343334363437393639 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237393339303237303839343334363437393639 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 1662271924 requestRef: 495239143
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 495239143 time: 1460856722838 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 495239143 time: 1460856722838 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@461e4fd, version(0:33)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 55, 57, 51, 57, 48, 50, 55, 48, 56, 57, 52, 51, 52, 54, 52, 55, 57, 54, 57] (keyRef: 1662271924); started at 1460856722838 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 55, 57, 51, 57, 48, 50, 55, 48, 56, 57, 52, 51, 52, 54, 52, 55, 57, 54, 57] (keyRef: 1662271924); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 55, 57, 51, 57, 48, 50, 55, 48, 56, 57, 52, 51, 52, 54, 52, 55, 57, 54, 57] keyRef: 1662271924; started at 1460856722837 took 748043 values: {(nodeId=0, key=[117, 115, 101, 114, 55, 57, 51, 57, 48, 50, 55, 48, 56, 57, 52, 51, 52, 54, 52, 55, 57, 54, 57], retrieved= [[[B@461e4fd, version(0:33)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.77103 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657237313134313338343038343531373235343839
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313134313338343038343531373235343839 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313134313338343038343531373235343839 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237313134313338343038343531373235343839 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 180130494 requestRef: 1549283499
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 1549283499 time: 1460856722848 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1549283499 time: 1460856722848 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:74)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 55, 49, 49, 52, 49, 51, 56, 52, 48, 56, 52, 53, 49, 55, 50, 53, 52, 56, 57] (keyRef: 180130494); started at 1460856722848 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 55, 49, 49, 52, 49, 51, 56, 52, 48, 56, 52, 53, 49, 55, 50, 53, 52, 56, 57] (keyRef: 180130494); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 55, 49, 49, 52, 49, 51, 56, 52, 48, 56, 52, 53, 49, 55, 50, 53, 52, 56, 57] keyRef: 180130494; started at 1460856722847 took 768926 values: {(nodeId=0, key=[117, 115, 101, 114, 55, 49, 49, 52, 49, 51, 56, 52, 48, 56, 52, 53, 49, 55, 50, 53, 52, 56, 57], retrieved= [version(0:74)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657237313134313338343038343531373235343839
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313134313338343038343531373235343839 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313134313338343038343531373235343839 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237313134313338343038343531373235343839 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 204614354 requestRef: 2064392180
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 2064392180 totalTimeNs: 309479 start time: 1460856722848 end time: 1460856722849 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 55, 49, 49, 52, 49, 51, 56, 52, 48, 56, 52, 53, 49, 55, 50, 53, 52, 56, 57] (keyRef: 204614354); started at 1460856722848 took 411261 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 55, 49, 49, 52, 49, 51, 56, 52, 48, 56, 52, 53, 49, 55, 50, 53, 52, 56, 57] keyRef: 204614354; started at 1460856722848 took 538542 value: [B@15cb5b49 (size: 228)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.556669 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657235353836313433383137353539333032353933
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657235353836313433383137353539333032353933 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657235353836313433383137353539333032353933 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657235353836313433383137353539333032353933 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 368190282 requestRef: 236613055
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 236613055 time: 1460856722852 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 236613055 time: 1460856722852 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@5bd271cf, version(0:39)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 53, 53, 56, 54, 49, 52, 51, 56, 49, 55, 53, 53, 57, 51, 48, 50, 53, 57, 51] (keyRef: 368190282); started at 1460856722852 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 53, 53, 56, 54, 49, 52, 51, 56, 49, 55, 53, 53, 57, 51, 48, 50, 53, 57, 51] (keyRef: 368190282); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 53, 53, 56, 54, 49, 52, 51, 56, 49, 55, 53, 53, 57, 51, 48, 50, 53, 57, 51] keyRef: 368190282; started at 1460856722852 took 755474 values: {(nodeId=0, key=[117, 115, 101, 114, 53, 53, 56, 54, 49, 52, 51, 56, 49, 55, 53, 53, 57, 51, 48, 50, 53, 57, 51], retrieved= [[[B@5bd271cf, version(0:39)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.777581 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657231393331303034393032333037313230343333
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231393331303034393032333037313230343333 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231393331303034393032333037313230343333 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657231393331303034393032333037313230343333 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 761848648 requestRef: 1880026524
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 1880026524 time: 1460856722861 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 1880026524 time: 1460856722862 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:41)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 49, 57, 51, 49, 48, 48, 52, 57, 48, 50, 51, 48, 55, 49, 50, 48, 52, 51, 51] (keyRef: 761848648); started at 1460856722861 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 49, 57, 51, 49, 48, 48, 52, 57, 48, 50, 51, 48, 55, 49, 50, 48, 52, 51, 51] (keyRef: 761848648); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 49, 57, 51, 49, 48, 48, 52, 57, 48, 50, 51, 48, 55, 49, 50, 48, 52, 51, 51] keyRef: 761848648; started at 1460856722861 took 684313 values: {(nodeId=0, key=[117, 115, 101, 114, 49, 57, 51, 49, 48, 48, 52, 57, 48, 50, 51, 48, 55, 49, 50, 48, 52, 51, 51], retrieved= [version(0:41)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657231393331303034393032333037313230343333
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231393331303034393032333037313230343333 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657231393331303034393032333037313230343333 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657231393331303034393032333037313230343333 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 1303081659 requestRef: 2049799024
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 2049799024 totalTimeNs: 307159 start time: 1460856722862 end time: 1460856722862 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 49, 57, 51, 49, 48, 48, 52, 57, 48, 50, 51, 48, 55, 49, 50, 48, 52, 51, 51] (keyRef: 1303081659); started at 1460856722862 took 409184 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 49, 57, 51, 49, 48, 48, 52, 57, 48, 50, 51, 48, 55, 49, 50, 48, 52, 51, 51] keyRef: 1303081659; started at 1460856722862 took 539449 value: [B@1035bdde (size: 250)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.558792 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657237313233353130373732343930323630383531
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313233353130373732343930323630383531 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313233353130373732343930323630383531 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237313233353130373732343930323630383531 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 1014647008 requestRef: 2138326027
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 2138326027 time: 1460856722882 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 2138326027 time: 1460856722882 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:38)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 55, 49, 50, 51, 53, 49, 48, 55, 55, 50, 52, 57, 48, 50, 54, 48, 56, 53, 49] (keyRef: 1014647008); started at 1460856722882 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 55, 49, 50, 51, 53, 49, 48, 55, 55, 50, 52, 57, 48, 50, 54, 48, 56, 53, 49] (keyRef: 1014647008); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 55, 49, 50, 51, 53, 49, 48, 55, 55, 50, 52, 57, 48, 50, 54, 48, 56, 53, 49] keyRef: 1014647008; started at 1460856722882 took 717705 values: {(nodeId=0, key=[117, 115, 101, 114, 55, 49, 50, 51, 53, 49, 48, 55, 55, 50, 52, 57, 48, 50, 54, 48, 56, 53, 49], retrieved= [version(0:38)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657237313233353130373732343930323630383531
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313233353130373732343930323630383531 primary partition 0
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657237313233353130373732343930323630383531 mapped to Nodes [0,] Partitions [[0]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657237313233353130373732343930323630383531 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 400293784 requestRef: 1992249170
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 1992249170 totalTimeNs: 362058 start time: 1460856722882 end time: 1460856722883 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 55, 49, 50, 51, 53, 49, 48, 55, 55, 50, 52, 57, 48, 50, 54, 48, 56, 53, 49] (keyRef: 400293784); started at 1460856722882 took 483045 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 55, 49, 50, 51, 53, 49, 48, 55, 55, 50, 52, 57, 48, 50, 54, 48, 56, 53, 49] keyRef: 400293784; started at 1460856722882 took 599673 value: [B@18ec342d (size: 254)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.618126 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation get Key 7573657234313733303334333138363037353433373639
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657234313733303334333138363037353433373639 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657234313733303334333138363037353433373639 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657234313733303334333138363037353433373639 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GET keyRef: 227180332 requestRef: 29582352
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get requestRef: 29582352 time: 1460856722889 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 29582352 time: 1460856722890 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [[[B@59c1e485, version(0:69)]]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get for key [117, 115, 101, 114, 52, 49, 55, 51, 48, 51, 52, 51, 49, 56, 54, 48, 55, 53, 52, 51, 55, 54, 57] (keyRef: 227180332); started at 1460856722889 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 52, 49, 55, 51, 48, 51, 52, 51, 49, 56, 54, 48, 55, 53, 52, 51, 55, 54, 57] (keyRef: 227180332); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get for key [117, 115, 101, 114, 52, 49, 55, 51, 48, 51, 52, 51, 49, 56, 54, 48, 55, 53, 52, 51, 55, 54, 57] keyRef: 227180332; started at 1460856722889 took 768921 values: {(nodeId=0, key=[117, 115, 101, 114, 52, 49, 55, 51, 48, 51, 52, 51, 49, 56, 54, 48, 55, 53, 52, 51, 55, 54, 57], retrieved= [[[B@59c1e485, version(0:69)]]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : GET test successful in 0.791841 ms
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation  get versions Key 7573657233323232373638323630363231313430393539
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233323232373638323630363231313430393539 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233323232373638323630363231313430393539 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657233323232373638323630363231313430393539 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - GETVERSIONS keyRef: 290433931 requestRef: 720940060
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Async request start; type: get versions requestRef: 720940060 time: 1460856722904 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065
+DEBUG voldemort-niosocket-client-1 voldemort.store.socket.SocketStore - Async request end; requestRef: 720940060 time: 1460856722904 server: localhost/127.0.0.1:6666 local socket: /127.0.0.1:46065 result: [version(0:35)]
+DEBUG voldemort-niosocket-client-1 voldemort.store.routed.action.PerformParallelRequests - Finished get versions for key [117, 115, 101, 114, 51, 50, 50, 50, 55, 54, 56, 50, 54, 48, 54, 50, 49, 49, 52, 48, 57, 53, 57] (keyRef: 290433931); started at 1460856722904 took 0 ms on node 0(localhost)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformParallelRequests - GET for key [117, 115, 101, 114, 51, 50, 50, 50, 55, 54, 56, 50, 54, 48, 54, 50, 49, 49, 52, 48, 57, 53, 57] (keyRef: 290433931); successes: 1 preferred: 1 required: 1
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished get versions for key [117, 115, 101, 114, 51, 50, 50, 50, 55, 54, 56, 50, 54, 48, 54, 50, 49, 49, 52, 48, 57, 53, 57] keyRef: 290433931; started at 1460856722904 took 694964 values: {(nodeId=0, key=[117, 115, 101, 114, 51, 50, 50, 50, 55, 54, 56, 50, 54, 48, 54, 50, 49, 49, 52, 48, 57, 53, 57], retrieved= [version(0:35)]), }
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Operation put Key 7573657233323232373638323630363231313430393539
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233323232373638323630363231313430393539 primary partition 1
+DEBUG vert.x-eventloop-thread-1 voldemort.routing.ConsistentRoutingStrategy - Key 7573657233323232373638323630363231313430393539 mapped to Nodes [0,] Partitions [[1]]
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Adding 1 node(s) to preference list
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.ConfigureNodes - Key 7573657233323232373638323630363231313430393539 final preference list to contact 0,
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Performing serial put requests to determine master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Attempt #1 to perform put (node 0)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - PUT keyRef: 606109800 requestRef: 2024056096
+DEBUG vert.x-eventloop-thread-1 voldemort.store.socket.SocketStore - Sync request end, type: put requestRef: 2024056096 totalTimeNs: 355008 start time: 1460856722905 end time: 1460856722905 client:/127.0.0.1:46065 server: localhost/127.0.0.1:6666 outcome: success
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Put on node 0 succeeded, using as master
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.action.PerformSerialPutRequests - Finished master PUT for key [117, 115, 101, 114, 51, 50, 50, 50, 55, 54, 56, 50, 54, 48, 54, 50, 49, 49, 52, 48, 57, 53, 57] (keyRef: 606109800); started at 1460856722905 took 472212 ns on node 0(localhost); now complete
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - Finished put for key [117, 115, 101, 114, 51, 50, 50, 50, 55, 54, 56, 50, 54, 48, 54, 50, 49, 49, 52, 48, 57, 53, 57] keyRef: 606109800; started at 1460856722905 took 599107 value: [B@145b5a4c (size: 237)
+DEBUG vert.x-eventloop-thread-1 voldemort.store.routed.PipelineRoutedStore - : PUT test successful in 0.618368 ms
+DEBUG AsyncNodeRecoverer voldemort.cluster.failuredetector.ThresholdFailureDetector - Sleeping for 10000 ms before checking node availability
+DEBUG AsyncNodeRecoverer voldemort.cluster.failuredetector.ThresholdFailureDetector - Sleeping for 10000 ms before checking node availability
+DEBUG AsyncNodeRecoverer voldemort.cluster.failuredetector.ThresholdFailureDetector - Sleeping for 10000 ms before checking node availability
+DEBUG AsyncNodeRecoverer voldemort.cluster.failuredetector.ThresholdFailureDetector - Sleeping for 10000 ms before checking node availability
+DEBUG AsyncNodeRecoverer voldemort.cluster.failuredetector.ThresholdFailureDetector - Sleeping for 10000 ms before checking node availability
+DEBUG AsyncNodeRecoverer voldemort.cluster.failuredetector.ThresholdFailureDetector - Sleeping for 10000 ms before checking node availability

@@ -47,9 +47,6 @@ public class MasterDriver extends AbstractVerticle{
 		String bootstrapUrl = "tcp://localhost:6666";
 		StoreClientFactory factory = new SocketStoreClientFactory(new ClientConfig().setBootstrapUrls(bootstrapUrl));
 	  	StoreClient<String, String> client = factory.getStoreClient("test");
-
-		
-
 		HttpServer server = vertx.createHttpServer();
 		server.requestHandler(new Handler<HttpServerRequest>() {
 			public void handle(HttpServerRequest req) {
